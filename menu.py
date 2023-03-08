@@ -21,15 +21,15 @@ def menu_run():
         if opcion == 1:
             Ejercicio1.main_invert()
         elif opcion == 2:
-            Ejercicio2.main_magico()
+            Ejercicio2.main_numeros()
         elif opcion == 3:
             Ejercicio3.main_coincidencias()
         elif opcion == 4:
             Ejercicio4.main_tareas()
         elif opcion == 5:
-            Ejercicio5.main()
+            Ejercicio5.main_separar()
         elif opcion == 6:
-            Ejercicio6.main_separar()
+            Ejercicio6.main_separarlist()
         elif opcion == 7:
             Ejercicio7.main_lista()
         elif opcion == 8:

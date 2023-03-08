@@ -15,7 +15,7 @@ def new_number(numero_usuario,numero_magico):
     new_number = nuevo_numero*numero_magico
     return "El resultado es",new_number
 
-def magicalonso():
+def main_numeros():
     numero_magico = 12345679
     numero_usuario = int(input("Introduce un número entre 1 y 9: "))
     correcto(numero_usuario)
@@ -23,6 +23,6 @@ def magicalonso():
     print(new_number(numero_usuario,numero_magico))
 
 if __name__ == "__main__":
-    magicalonso()
+    main_numeros()
 
       

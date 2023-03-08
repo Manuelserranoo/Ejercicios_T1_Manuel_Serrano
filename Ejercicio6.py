@@ -7,10 +7,10 @@ def separar_lista(lista):
         else:
             lista2.append(i)
     return lista1, lista2
-def main_separar():
+def main_separarlist():
     lista = [1,2,3,4,5,6,7,8,9,10]
     lista1, lista2 = separar_lista(lista)
     print("Lista de números pares: ",lista1)
     print("Lista de números impares: ",lista2)
 if __name__=="__main__":
-    main_separar()
+    main_separarlist()
