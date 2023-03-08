@@ -1,31 +1,16 @@
-import sys
+def separar_num(num):
 
-def descomposicion(num):
-    unidades = num % 10
-    decenas = (num // 10) % 10
-    centenas = (num // 100) % 10
-    miles = (num // 1000) % 10
-    return miles, centenas, decenas, unidades
+# Convertir el número en una cadena para poder acceder a sus caracteres individualmente
+    num_str = str(num)
+# Recorrer el número desde el final hacia el principio y añadir ceros en los espacios vacíos
+    for i in range(len(num_str)):
+        factor = num_str[len(num_str) - i - 1]
+        if factor != "0":
+            print(factor + "0" * i)
 
-if len(sys.argv) == 2:
-    try:
-        num = int(sys.argv[1])
-        if num > 0:
-            miles, centenas, decenas, unidades = descomposicion(num)
-            print("{:04d}".format(unidades))
-            print("{:04d}".format(decenas * 10))
-            print("{:04d}".format(centenas * 100))
-            print("{:04d}".format(miles * 1000))
-        else:
-            print("El número debe ser positivo.")
-    except ValueError:
-        print("El argumento debe ser un número entero.")
-else:
-    print("Este script necesita un argumento, que debe ser un número entero positivo.")
-
-def main():
+def main_separar():
     num = int(input("Introduce un número: "))
-    print(descomposicion(num))
+    print(separar_num(num))
 
 if __name__ == "__main__":
-    main()
+    main_separar()
