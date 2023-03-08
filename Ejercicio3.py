@@ -6,7 +6,6 @@ def main():
     for i in lista1:
         if i in lista2:
             lista3.append(i)
-    print(lista3)
     #eliminar los elementos repetidos de la lista3
     lista4 = []
     for i in lista3:
